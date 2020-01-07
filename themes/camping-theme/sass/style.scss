@@ -63,3 +63,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+
+// WP Admin Logo
+.login h1 a {
+	background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}

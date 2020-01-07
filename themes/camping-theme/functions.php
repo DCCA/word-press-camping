@@ -94,6 +94,12 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+// Change the logo from the WP Admin
+function change_wp_admin_logo(){ 
+
+}
+add_action('login_enqueue_scripts', 'change_wp_admin_logo');
+
 /**
  * Custom template tags for this theme.
  */
@@ -103,3 +109,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function my_login_logo_one() { 
+?> 
+<style type="text/css"> 
+	body.login div#login h1 a {
+ 		background-image: url(https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687); 
+	} 
+</style>
+<?php 
+} add_action( 'login_enqueue_scripts', 'my_login_logo_one' );

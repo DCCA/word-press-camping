@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Camping theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -670,3 +670,5 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.login h1 a {
+  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); }
